@@ -1,0 +1,32 @@
+.container__padding {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.packing__title {
+  color: #4f4f4f;
+  margin-top: 5rem;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+}
+
+.packing {
+  margin: 2rem 4rem 0 1rem;
+}
+
+select.packing__select {
+  min-width: 18.75rem;
+}
+
+.packing__header {
+  margin-bottom: 1.875rem;
+}
+
+.packing__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

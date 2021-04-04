@@ -1,0 +1,72 @@
+nav {
+  background: transparent;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90vw;
+  max-width: 1170px;
+}
+
+img.navbar-logo {
+  height: 2rem;
+  margin-top: 2.5rem;
+  object-fit: contain;
+}
+
+button {
+  cursor: pointer;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline;
+  line-height: 7rem;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4f4f4f;
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+
+li > a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.175rem;
+  left: 0;
+  bottom: 0;
+  background: black;
+}
+
+li > a::after {
+  transform: scale(0, 1);
+}
+li > a.active::after {
+  transform: scale(1, 1);
+}
+
+ul > button {
+  font-family: Quicksand;
+  font-style: normal;
+  padding: 0;
+  font-size: 16px;
+  margin: 0 1rem 1rem 1rem;
+}
+
+ul > button.notification {
+  padding-top: 0.5rem;
+}

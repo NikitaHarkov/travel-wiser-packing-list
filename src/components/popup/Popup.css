@@ -1,0 +1,52 @@
+h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.popup {
+  background: #fff;
+  box-shadow: 0px 15px 30px rgba(83, 83, 83, 0.15);
+  position: absolute;
+  transform: translateX(-15%);
+  z-index: 3;
+  display: none;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.5s linear;
+  width: 15rem;
+}
+
+.popup::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popup.show {
+  display: block;
+}
+
+.popup-center {
+  display: inline-flex;
+  gap: 0.25rem 2rem;
+}
+
+.popup h4 {
+  margin-bottom: 1.5rem;
+}
+.popup-center button {
+  display: block;
+  color: hsl(209, 61%, 16%);
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
